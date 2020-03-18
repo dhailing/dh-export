@@ -1,0 +1,22 @@
+{
+    "name": "ninenight/export",
+    "description": "整合常用短信接口,方便记录/管理/调用",
+    "authors": [
+        {
+            "name": "dhailing",
+            "email": "1066179972@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "mk-j/php_xlsxwriter": "dev-master",
+        "phpoffice/phpspreadsheet": "dev-master"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "ninenight\\export\\": "src/"
+        }
+    }
+}
