@@ -40,6 +40,12 @@ class PhpExcel implements ExportInterface
     public function doExport()
     {
         // TODO: Implement doExport() method.
+        header('Content-disposition: attachment; filename="' . $this->fileName . '".xlsx');
+        header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+        header('Content-Transfer-Encoding: binary');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+
         $header = array_values($this->title);
         $data = array_values($this->data);
         //获取列信息

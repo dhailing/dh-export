@@ -45,7 +45,7 @@ class PhpBrowser implements ExportInterface
         header("Content-Type:application/vnd.ms-execl");
         header("Content-Type:application/octet-stream");
         header("Content-Type:application/download");
-        header('Content-Disposition:attachment;filename="' . $this->fileName . '.xls"');
+        header('Content-Disposition:attachment;filename="' . $this->fileName . '.xlsx"');
         header("Content-Transfer-Encoding:binary");
         echo $strTable;
         exit(0);

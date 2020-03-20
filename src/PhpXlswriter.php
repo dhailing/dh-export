@@ -24,7 +24,7 @@ class PhpXlswriter implements ExportInterface
     {
         // TODO: Implement doExport() method.
         //设置 header，用于浏览器下载
-        header('Content-disposition: attachment; filename="' . $this->fileName . '"');
+        header('Content-disposition: attachment; filename="' . $this->fileName . '".xlsx');
         header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
         header('Content-Transfer-Encoding: binary');
         header('Cache-Control: must-revalidate');

@@ -29,7 +29,7 @@ class PhpCvs implements ExportInterface
         $string = iconv('utf-8','GB18030', $string);
         $listcount = count($this->data);
         for ($j = 0; $j < $listcount; $j++) {
-            $row = $this->data[$j];
+            $row = array_keys($this->data[$j]);
             for ($k = 0; $k < $colum; $k++) {
                 $string .= $row[$k];
             }
