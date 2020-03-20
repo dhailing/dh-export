@@ -8,9 +8,9 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "mk-j/php_xlsxwriter": "dev-master",
-        "phpoffice/phpspreadsheet": "dev-master"
+        "php": ">=5.2",
+        "phpoffice/phpspreadsheet": "dev-master",
+        "mk-j/php_xlsxwriter": "0.37"
     },
     "license": "MIT",
     "minimum-stability": "dev",
