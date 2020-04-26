@@ -13,8 +13,8 @@ class Export
                 return new PhpXlswriter($filename, $title, $data);
             case 'excel':
                 return new PhpExcel($filename, $title, $data);
-            case 'cvs':
-                return new PhpCvs($filename, $title, $data);
+            case 'csv':
+                return new PhpCsv($filename, $title, $data);
             case 'browser':
                 return new PhpBrowser($filename, $title, $data);
             default:
